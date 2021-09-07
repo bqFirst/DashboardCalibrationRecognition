@@ -17,6 +17,7 @@
 
 def get_match_rect(template,img,method):
     res = cv2.matchTemplate(img, template, method)
+    
 匹配的效果如下：
 
 根据模板选取的原则我们，必须进行两次匹配才能的到精确和更高准确率的结果
@@ -50,18 +51,15 @@ def get_match_rect(template,img,method):
 
 
 #### 鼠标获得0刻度
-opint = markzero(new_)
+`<opint = markzero(new_)>`
 
 ### 3.6 角度计算
-rad = angle((c_x, c_y, opint[0], opint[1]), (c_x, c_y, x, y))
+
+`<rad = angle((c_x, c_y, opint[0], opint[1]), (c_x, c_y, x, y))>`
 
 
 ## 参考
-1、使用OpenCV进行仪表数值读取 
-https://blog.csdn.net/a1053904672/article/details/88759335?utm_medium=distribute.pc_relevant_download.none-task-blog-2~default~BlogCommendFromBaidu~default-1.nonecase&depth_1-utm_source=distribute.pc_relevant_download.none-task-blog-2~default~BlogCommendFr - automatic!
-2、指针式仪表的自动读数与识别 
-https://www.pythonf.cn/read/103022 - automatic!
+1、[使用OpenCV进行仪表数值读取](https://blog.csdn.net/a1053904672/article/details/88759335?utm_medium=distribute.pc_relevant_download.none-task-blog-2~default~BlogCommendFromBaidu~default-1.nonecase&depth_1-utm_source=distribute.pc_relevant_download.none-task-blog-2~default~BlogCommendFr)
 
-http://github.com - automatic!
-[GitHub](http://github.com)
+2、[指针式仪表的自动读数与识别](https://www.pythonf.cn/read/103022)
 
