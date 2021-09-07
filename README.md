@@ -15,8 +15,8 @@
 第一次的模板选取如下：
 
 
-def get_match_rect(template,img,method):
-    res = cv2.matchTemplate(img, template, method)
+    def get_match_rect(template,img,method):
+        res = cv2.matchTemplate(img, template, method)
     
 匹配的效果如下：
 
@@ -42,8 +42,8 @@ def get_match_rect(template,img,method):
 
 聚类结果：
 
-[[31.99054054 23.04324324 14.89054054]
- [62.69068323 53.56024845 40.05652174]]
+    [[31.99054054 23.04324324 14.89054054]
+     [62.69068323 53.56024845 40.05652174]]
 重合数量和对应坐标： (1566, (26.73 143.50)) 
 
 ### 3.5 鼠标获取0刻度坐标
@@ -51,11 +51,11 @@ def get_match_rect(template,img,method):
 
 
 #### 鼠标获得0刻度
-`<opint = markzero(new_)>`
+    markzero(new_)
 
 ### 3.6 角度计算
 
-`<rad = angle((c_x, c_y, opint[0], opint[1]), (c_x, c_y, x, y))>`
+    angle((c_x, c_y, opint[0], opint[1]), (c_x, c_y, x, y))
 
 
 ## 参考
